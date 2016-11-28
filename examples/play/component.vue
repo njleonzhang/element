@@ -4,7 +4,7 @@
       :data="tableData3"
       border
       style="width: 100%"
-      :coloum-input-filter="true"
+      :column-input-filter="true"
       @selection-change="handleSelectionChange"
       @column-filter-change="handleFilterChange">
       <el-table-column
