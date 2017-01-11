@@ -197,8 +197,10 @@ export default {
 
       this.$nextTick(_ => {
         for (let i = 0, length = this.columns.length; i < length; i++) {
-          if (this.columns[i].property === this.defaultSortProp) {
-            this.columns[i].order = this.defaultSortOrder;
+          let column = this.columns[i];
+          if (column.property === this.defaultSortProp) {
+            column.order = this.defaultSortOrder;
+            states.sortingColumn = column;
             break;
           }
         }
