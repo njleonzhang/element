@@ -138,7 +138,9 @@
         type: Boolean
       },
       buttons: {
-        default: [],
+        default() {
+          return []
+        },
         type: Array
       }
     },
