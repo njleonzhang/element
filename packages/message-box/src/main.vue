@@ -137,7 +137,10 @@
         default: false,
         type: Boolean
       },
-      buttons: []
+      buttons: {
+        default: [],
+        type: Array
+      }
     },
 
     components: {
